@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Variabel JS</title></head>
+<body>
+  <div id="tampilVariabel"></div>
+  <script>
+    let nama = 'Andi';        
+    const umur = 21;           
+    var isActive = true;       
+    let tidakAda;              
+    let kosong = null;         
+
+    const html = `
+      <h3>Contoh Tipe Variabel</h3>
+      <p>nama       (String)   : ${nama}</p>
+      <p>umur       (Number)   : ${umur}</p>
+      <p>isActive   (Boolean)  : ${isActive}</p>
+      <p>tidakAda   (Undefined): ${tidakAda}</p>
+      <p>kosong     (Null)     : ${kosong}</p>
+    `;
+    document.getElementById('tampilVariabel').innerHTML = html;
+  </script>
+</body>
+</html>

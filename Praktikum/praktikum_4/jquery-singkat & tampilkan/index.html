@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Demo</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <button id="jqHitung">Hitung dengan jQuery</button>
+  <div id="jqOutput"></div>
+  <script>
+    $(document).ready(() => {
+      $('#jqHitung').on('click', () => {
+        const arr = [80, 75, 90];
+        const rata = arr.reduce((a,b) => a + b, 0) / arr.length;
+        $('#jqOutput').html(`
+          <p>Data: [${arr.join(', ')}]</p>
+          <p>Rata-rata: ${rata}</p>
+        `);
+      });
+    });
+  </script>
+</body>
+</html>

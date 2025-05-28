@@ -1,0 +1,72 @@
+body{
+    background-color: #FAF3E0;
+}
+
+.bg-malas{
+    background: #F7CFD8;
+}
+
+.card-body {
+    border-radius: 10px;
+    background-color: #FFF1D5;
+    box-shadow:
+      0 5px 1px rgba(0, 0, 0, 0.1),   /* layer 1 */
+      0 5px 1px rgb(0, 0, 0),  /* layer 2 */
+        5px 1px rgb(0, 0, 0);
+  }
+  
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+  .text-malas2 {
+    color: #555; /* warna biru khas Bootstrap atau kamu bisa ganti */
+  }
+  
+  .navbar {
+    background-color: #B3E5FC; /* biru pastel */
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); /* shadow tebal ala 2D */
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    background-color: #FFF9C4; /* kuning pastel */
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    transform: translateY(-2px);
+    background-color: #FFECB3;
+    color: #000;
+  }
+
+  .table td {
+    padding: 8px 12px;
+  }
+  .table i {
+    margin-right: 8px;
+  }
+  .table a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .table a:hover {
+    color: #007bff;
+  }

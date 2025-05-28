@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Array & Object</title></head>
+<body>
+  <div id="dataArrayObj"></div>
+  <script>
+    const nilai = [80, 75, 90, 60];
+    const mhs = { nama: 'Budi', nim: 'IF1234', uts: 85 };
+
+    let htmlArr = '<h3>Daftar Nilai:</h3><ul>';
+    nilai.forEach((n, i) => {
+      htmlArr += `<li>Nilai ke-${i+1}: ${n}</li>`;
+    });
+    htmlArr += '</ul>';
+
+    let htmlObj = `
+      <h3>Data Mahasiswa:</h3>
+      <p>Nama: ${mhs.nama}</p>
+      <p>NIM: ${mhs.nim}</p>
+      <p>Nilai UTS: ${mhs.uts}</p>
+    `;
+
+    document.getElementById('dataArrayObj').innerHTML = htmlArr + htmlObj;
+  </script>
+</body>
+</html>

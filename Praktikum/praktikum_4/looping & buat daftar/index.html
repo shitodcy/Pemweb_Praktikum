@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Looping JS</title></head>
+<body>
+  <div id="daftarLoop"></div>
+  <script>
+    const nilai = [80, 75, 90, 60];
+    let html = '<h3>Looping Nilai:</h3><ol>';
+
+    for (let i = 0; i < nilai.length; i++) {
+      html += `<li>Index ${i}: ${nilai[i]}</li>`;
+    }
+    html += '</ol>';
+
+    html += '<h4>While Loop</h4><ul>';
+    let j = 0;
+    while (j < nilai.length) {
+      html += `<li>${nilai[j]}</li>`;
+      j++;
+    }
+    html += '</ul>';
+
+    document.getElementById('daftarLoop').innerHTML = html;
+  </script>
+</body>
+</html>

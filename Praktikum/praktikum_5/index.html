@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 5 - CSS Framework</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-fluid">
+          <img class="navbar-brand display-4 fw-bold animate__animated animate__fadeInDown" src="https://imphnen.ekel.dev/images/logo.svg" alt="logo" style="height: 100px; width: 100px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#about">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#pendidikan">Pendidikan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#pengalaman">Pengalaman</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#keahlian">Keahlian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3" href="#kontak">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="about" class="py-5" data-aos="fade-up">
+        <div class="container">
+          <div class="p-5 mb-5 rounded bg-malas text-white">
+            <div class="row justify-content-center align-items-center g-4">
+
+              <!-- Col md-6: teks besar & kecil -->
+              <div class="col-md-6">
+                <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">
+                  Selamat Datang!
+                </h1>
+                <p class="lead animate__animated animate__fadeInUp">
+                  Saya adalah <strong>Lazybear</strong>, member dari <em>ingin menjadi programer handal tapi enggan ngoding (imphnen)</em>  
+                  dengan pengalaman lebih dari <strong>14 tahun</strong> menciptakan kemalasan ngoding global.
+                </p>
+              </div>
+
+              <!-- Col md-5: gambar avatar -->
+              <div class="col-md-5 text-center">
+                <dotlottie-player
+                    src="https://lottie.host/e1a6113a-6d00-45be-90b5-30d65c093fe0/iCYDczk7KF.lottie"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px"
+                    loop
+                    autoplay></dotlottie-player>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main class="container my-5">
+        <!-- About -->
+        <section id="about" class="mb-5" data-aos="fade-up">
+          <h2 class="h3 mb-3 text-purple">Tentang Saya</h2>
+          <p>Saya adalah seorang profesional dengan pengalaman luas dalam <strong>[Bidang Keahlian]</strong>. Passion saya adalah menciptakan solusi inovatif dan bekerja kolaboratif untuk mencapai hasil terbaik.</p/>
+        </section>
+
+    <!-- Education -->
+    <section id="pendidikan" class="mb-5" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="h3 mb-4 text-malas2">Pendidikan</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Universitas XYZ</h5>
+                <p class="card-text"><strong>Gelar:</strong> S.T. [Jurusan]<br>
+                <strong>Tahun:</strong> 2015 – 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">SMA ABC</h5>
+                <p class="card-text"><strong>Program:</strong> IPA/IPS<br>
+                <strong>Tahun:</strong> 2012 – 2015</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Experience -->
+      <section id="pengalaman" class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="h3 mb-4 text-malas2">Pengalaman Kerja</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Perusahaan A</h5>
+                <p class="card-text"><strong>Posisi:</strong> Software Developer<br>
+                <strong>2019 – Sekarang</strong></p>
+                <ul>
+                  <li>Pengembangan aplikasi web modern.</li>
+                  <li>Integrasi API dan manajemen database.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Perusahaan B</h5>
+                <p class="card-text"><strong>Posisi:</strong> Intern Developer<br>
+                <strong>2018</strong></p>
+                <ul>
+                  <li>Belajar alur kerja tim dan Git.</li>
+                  <li>Mengerjakan modul front-end dasar.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Portfolio -->
+      <section id="portfolio" class="mb-5" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="h3 mb-4 text-malas2">Portfolio</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Proyek 1: Aplikasi Web</h5>
+                <p class="card-text">Aplikasi web responsif dengan fitur modern dan UI/UX yang intuitif.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Proyek 2: Sistem Manajemen</h5>
+                <p class="card-text">Sistem manajemen data yang meningkatkan efisiensi operasional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Skills -->
+      <section id="keahlian" class="mb-5" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="h3 mb-3 text-malas2">Keahlian</h2>
+        <div class="row g-3">
+          <div class="col-6 col-md-4"><span class="badge border border-primary text-primary px-3 py-2">HTML5</span></div>
+          <div class="col-6 col-md-4"><span class="badge border border-primary text-primary px-3 py-2">CSS3</span></div>
+          <div class="col-6 col-md-4"><span class="badge border border-primary text-primary px-3 py-2">JavaScript</span></div>
+          <div class="col-6 col-md-4"><span class="badge border border-primary text-primary px-3 py-2">React</span></div>
+          <div class="col-6 col-md-4"><span class="badge border border-primary text-primary px-3 py-2">Node.js</span></div>
+          <div class="col-6 col-md-4"><span class="badge border border-primary text-primary px-3 py-2">Python</span></div>
+        </div>
+      </section>
+  
+      <!-- Contact -->
+      <section id="kontak" class="mb-5" data-aos="fade-up" data-aos-delay="500">
+        <h2 class="h3 mb-3 text-malas2">Kontak</h2>
+        <table class="table table-borderless w-auto">
+          <tbody>
+            <tr>
+              <td><i class="bi bi-envelope-fill fs-4 text-primary"></i></td>
+              <td><a href="mailto:email@example.com">email@example.com</a></td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-instagram fs-4 text-danger"></i></td>
+              <td><a href="https://instagram.com/namaanda" target="_blank">@namaanda</a></td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-facebook fs-4 text-primary"></i></td>
+              <td><a href="https://facebook.com/namaanda" target="_blank">Nama Anda</a></td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-twitter fs-4 text-info"></i></td>
+              <td><a href="https://twitter.com/namaanda" target="_blank">@namaanda</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+    </main>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+</body>
+</html>

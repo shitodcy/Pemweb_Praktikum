@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Function JS</title></head>
+<body>
+  <div id="outFunction"></div>
+  <script>
+    function hitungRata(arr) {
+      return arr.reduce((a,b) => a + b, 0) / arr.length;
+    }
+    const cekLulus = rata => rata >= 75 ? 'Lulus' : 'Remedial';
+
+    const dataNilai = [80, 75, 90, 60];
+    const rata2 = hitungRata(dataNilai);
+    const status2 = cekLulus(rata2);
+
+    document.getElementById('outFunction').innerHTML = `
+      <p>Rata-rata: ${rata2}</p>
+      <p>Status: ${status2}</p>
+    `;
+  </script>
+</body>
+</html>

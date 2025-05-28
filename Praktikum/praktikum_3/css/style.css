@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1,6;
+    background-color: #44475a;
+    color: #ff79c6;
+}
+
+header{
+    background: #44475a;
+    padding: 50px;
+    text-align: center;
+}
+
+header img.profile-img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50% ;
+    border: 3px solid #bd93f9;
+    margin-bottom: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1.2em;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}

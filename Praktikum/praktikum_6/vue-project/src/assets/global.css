@@ -1,0 +1,51 @@
+/* --- Layout root: sticky footer --- */
+html, body, #app {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sticky-footer {
+    margin-top: auto;          /* dorong footer ke paling bawah */
+    bottom: 0px;
+    width: 100%;
+  }
+
+  :root{
+    --purple-dark:   #4b0079;
+    --purple-main:   #7d1eff;
+    --purple-light: #d3b3ff;
+    --purple-accent: #c300ff;
+  }
+/* --- Navbar “agency style” --- */
+.navbar-purple {
+    background: linear-gradient(90deg, var(--purple-dark), var(--purple-main));
+  }
+  .navbar-purple .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: .8px;
+    position: relative;
+  }
+  .navbar-purple .nav-link::after{              /* efek garis bawah animasi */
+    content:'';
+    position:absolute; left:0; bottom:4px;
+    width:0; height:2px;
+    background: var(--purple-accent);
+    transition: width .3s;
+  }
+  .navbar-purple .nav-link:hover::after,
+  .navbar-purple .router-link-active::after{
+    width:100%;
+  }
+  .navbar-purple .router-link-active{
+    color: var(--purple-accent) !important;
+  }
+  
+  /* --- Footer --- */
+  .footer-purple{
+    background: var(--purple-dark);
+    color:#fff;
+  }
+    

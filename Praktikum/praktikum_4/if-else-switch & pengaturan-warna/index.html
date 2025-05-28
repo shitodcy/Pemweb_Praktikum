@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Kontrol Alur</title></head>
+<body>
+  <div id="hasilStatus"></div>
+  <script>
+    const uts = 80, uas = 70;
+    const rata = (uts + uas) / 2;
+    let status, warna;
+
+    if (rata >= 75) {
+      status = 'Lulus';   warna = 'green';
+    } else if (rata >= 60) {
+      status = 'Remedial'; warna = 'orange';
+    } else {
+      status = 'Tidak Lulus'; warna = 'red';
+    }
+
+    let grade;
+    switch (true) {
+      case rata >= 85: grade = 'A'; break;
+      case rata >= 70: grade = 'B'; break;
+      default:          grade = 'C';
+    }
+
+    document.getElementById('hasilStatus').innerHTML = `
+      <p>Rata-rata: ${rata}</p>
+      <p style="color:${warna}; font-weight:bold;">
+        Status: ${status}
+      </p>
+      <p>Grade: ${grade}</p>
+    `;
+  </script>
+</body>
+</html>

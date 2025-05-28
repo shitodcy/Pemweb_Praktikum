@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>DOM Manipulation</title></head>
+<body>
+  <h1 id="judul">Judul Asli</h1>
+  <button id="btnUbah">Ubah Judul & Warna</button>
+
+  <script>
+    const judul = document.getElementById('judul');
+    const tombol = document.getElementById('btnUbah');
+
+    tombol.addEventListener('click', () => {
+      judul.textContent = 'Judul Telah Diubah!';
+      judul.style.color = 'purple';
+      judul.style.fontSize = '2rem';
+    });
+  </script>
+</body>
+</html>
